@@ -1,0 +1,124 @@
+/**** R E S E T  start****/
+*:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a,
+button {
+  cursor: revert;
+}
+ol,
+ul,
+menu {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+table {
+  border-collapse: collapse;
+}
+textarea {
+  white-space: revert;
+}
+meter {
+  -webkit-appearance: revert;
+  appearance: revert;
+}
+::placeholder {
+  color: unset;
+}
+:where([hidden]) {
+  display: none;
+}
+:where([contenteditable]) {
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  overflow-wrap: break-word;
+  -webkit-line-break: after-white-space;
+}
+:where([draggable="true"]) {
+  -webkit-user-drag: element;
+}
+/**** R E S E T  end****/
+
+/**
+    ### Primary
+
+- Gradient: hsl(6, 100%, 80%) to hsl(335, 100%, 65%)
+
+### Neutral
+
+- Pale Blue: hsl(243, 100%, 93%)
+- Grayish Blue: hsl(229, 7%, 55%)
+- Dark Blue: hsl(228, 56%, 26%)
+- Very Dark Blue: hsl(229, 57%, 11%)
+*/
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: hsl(0, 0%, 100%, 0.7);
+  background-image: url(../images/bg-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.container {
+  min-width: 23.4375rem;
+  display: grid;
+  place-items: center;
+}
+.card {
+  min-width: 20.3125;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 0.7rem;
+  padding: 2.3rem;
+  width: 85%;
+}
+.archive {
+  border-top-right-radius: 7rem;
+  margin-bottom: 1rem;
+}
+.archive > img {
+  margin-bottom: 2rem;
+}
+.archive ul {
+  display: flex;
+  align-items: center;
+}
+li {
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  background-color: hsl(229, 57%, 11%);
+  border-radius: 0.5rem;
+  margin-right: 1rem;
+}
+.storage {
+  text-align: center;
+}
+span {
+  font-weight: 700;
+}
+progress {
+  border: 0;
+  background: rgb(12, 18, 44, 0.5);
+  border-radius: 1rem;
+  padding: 0.3rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+progress::-moz-progress-bar {
+  border-radius: 1rem;
+  background: linear-gradient(to right, rgb(255, 163, 153), rgb(255, 77, 151));
+}
