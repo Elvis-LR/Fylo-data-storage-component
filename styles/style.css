@@ -122,3 +122,57 @@ progress::-moz-progress-bar {
   border-radius: 1rem;
   background: linear-gradient(to right, rgb(255, 163, 153), rgb(255, 77, 151));
 }
+.range{
+    display: flex;
+    justify-content: space-between;
+}
+.range p{
+    font-weight: 700;
+}
+.storage-left{
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(229, 57%, 11%);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: -2rem;
+}
+.amount{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 0.5rem;
+
+}
+.amount-left{
+    color: hsl(229, 7%, 55%);
+    font-weight: 700;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+}
+@media (min-width:50rem){
+    body{
+        background-image: url(../images/bg-desktop.png);
+        background-color: hsl(229, 57%, 11%);
+        background-size: contain;
+        background-position-y: 100%;
+    }
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+    .archive{
+        max-width: 17rem;
+        margin-right: 1.5rem;
+        margin-bottom: 0rem;
+    }
+    .storage{
+        text-align: left;
+    }
+    .storage-left{
+        top: -8rem;
+        left: -8.8rem;
+    }
+}
